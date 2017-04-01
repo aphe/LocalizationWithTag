@@ -10,9 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var lblHello: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        lblHello.text = "hello_name".localized()
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,3 +26,11 @@ class ViewController: UIViewController {
 
 }
 
+
+extension String {
+
+    func localized(_ comment: String = "") -> String {
+        return NSLocalizedString(self, tableName: nil, bundle: Bundle.main, value: "", comment: comment)
+    }
+
+}
