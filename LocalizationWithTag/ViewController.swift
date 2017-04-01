@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        lblHello.text = "hello_name".localized()
+        lblHello.text = String(format: "hello_name".localized(), "Jane")
     }
 
     override func didReceiveMemoryWarning() {
