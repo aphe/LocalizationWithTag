@@ -17,8 +17,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         lblHello.text = "hello_name".localized()
         if lblHello.font.isSupportBolt {
-            let titleAttrs:Dictionary<String,AnyObject> = [NSFontAttributeName: lblHello.font.bold(),
-                              NSForegroundColorAttributeName: UIColor.black]
+            let titleAttrs:Dictionary<String,AnyObject> = [NSFontAttributeName: lblHello.font.bold()]
             let g = convertTagFor(inputText: NSMutableAttributedString(string: String(format: "hello_name".localized(), "Jane")), withAttribute: titleAttrs, startWith: "<b>", endWith: "</b>")
             lblHello.attributedText = g
         }
