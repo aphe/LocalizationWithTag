@@ -6,4 +6,4 @@
   Copyright © 2017 Afriyandi Setiawan. All rights reserved.
 */
 
-"hello_name" = "Halo, apa kabar, %@?";
+"hello_name" = "Halo, <b>apa</b> kabar, <b>%@</b>?";
